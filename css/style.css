@@ -1,0 +1,434 @@
+/* header navbar css*/
+
+.navBar .navbar-brand img {
+    height: 5rem;
+    width: 21.5rem;
+}
+
+
+.navBar .nav-link {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-family: var(--ternary-font);
+    position: relative;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navBar .nav-link {
+      width: 115px;
+    }
+  }
+
+.navBar .nav-link::after{
+    content: "";
+    width: 0;
+    height: 5px;
+    background-color:var(--themeColor-1);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    border-radius: 2px;
+    transition: all .4s;
+}
+.navBar .nav-link.active{
+    color: var(--themeColor-1);
+    transform: scale(1.2);
+}
+.navBar .nav-link:hover::after{
+    width: 90%;
+}
+
+.navBar .addRecipeBtn {
+    background-color: var(--themeColor-1);
+    color: #fff;
+    border-radius: .5rem;
+    border: none;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    width: 12rem;
+    transition: all.2s ease-in-out;
+    font-family: var(--ternary-font);
+}
+
+.navBar .addRecipeBtn:hover {
+    color: var(--themeColor-1);
+    background-color: #fff;
+    border: var(--themeColor-1) 2px solid;
+}
+
+.navBar .navbar-toggler {
+    padding: 0;
+    margin: 0;
+}
+
+#navCollapseBtn,
+#navOpenBtn {
+    color: var(--themeColor-1);
+    padding: 0.5rem;
+    animation: navCollapseBtn .7s ease-in-out;
+}
+
+@keyframes navCollapseBtn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    margin-bottom: 4rem;
+}
+
+
+/* banner slider section */
+.bannerCardSec {
+    margin-bottom: 4rem;
+}
+
+.bannerCard {
+    height: 600px;
+    padding: 2rem;
+}
+
+.bannerImg {
+    height: 80%;
+}
+
+.bannerImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bannerDetails {
+    height: 20%;
+}
+
+.bannerDetails p {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--themeColor-1);
+    margin: 1rem 0;
+    font-family: var(--ternary-font);
+}
+
+.bannerDetails h3 {
+    font-size: 3rem;
+    font-family: var(--ternary-font);
+    overflow: auto;
+    height: 100px;
+}
+
+
+
+/* invitation card style*/
+
+.invitationSec .container {
+    background: var(--themeColor-2);
+    background-image: url("../images/invitation/invitationBackground.png");
+
+    padding: 2rem;
+}
+
+.invitationSec .container .invitation {
+    border: 1px solid var(--themeColor-1);
+    padding: 5rem 4rem;
+    background-image: url("../images/invitation/invitationFlower.png");
+    background-repeat: no-repeat;
+    background-position: 110% 50%;
+}
+
+.invitationHead h3 {
+    font-family: var(--secondary-font);
+    font-size: 3.8rem;
+    margin-top: 4rem;
+}
+
+.invitationLinks {
+    margin: 3.5rem 0;
+}
+
+.invitationLinks a {
+    color: var(--themeColor-1);
+    font-size: 2.5rem;
+    margin: 0 1rem;
+    padding: .5rem;
+}
+
+.invitationLinks a i {
+    transition: all .2s ease-in-out;
+}
+
+.invitationLinks a:hover i {
+    transform: scale(1.2);
+}
+
+.invitationBtn button {
+    border: none;
+    border-bottom: 1px solid var(--themeColor-1);
+    font-family: var(--ternary-font);
+    background: none;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.invitationBtn button:hover {
+    color: var(--themeColor-1);
+    background-color: #ffeae7;
+    border-radius: 0.5rem;
+}
+
+.invitationImg {
+    height: 250px;
+    width: 250px;
+    margin: 2rem;
+}
+
+.invitationImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.invitationSec {
+    margin-bottom: 4rem;
+}
+
+/* cards section*/
+
+.cardSec {
+    margin-bottom: 4rem;
+}
+
+
+.cardSecHeading h3 {
+    color: var(--themeColor-1);
+    font-family: var(--secondary-font);
+    font-size: 3.8rem;
+    padding: 2rem;
+}
+
+.dishCard {
+    height: 500px;
+    border: none;
+    box-shadow: var(--themeColor-1) 0px 5px 15px;
+}
+.dishCard .dishImg:hover{
+    background-color: red;    
+}
+
+.dishImg {
+    height: 300px;
+}
+
+.dishImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dishType p {
+    color: var(--themeColor-1);
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+.dishName h4 {
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 6rem;
+}
+
+.dishName {
+    border: none;
+    border-bottom: grey 1px solid;
+}
+
+.dishTime {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+.dishTime p {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: rgb(77, 75, 75);
+}
+
+/* newsletter section*/
+
+
+.newsletterSec {
+    margin-bottom: 4rem;
+}
+
+.newsletterSec .container {
+    background: var(--themeColor-2);
+    background-image: url("../images/newsletter/newsletterBackground.png");
+    padding: 2rem;
+}
+
+.newsletter {
+    border: 1px solid var(--themeColor-1);
+    padding: 2rem;
+    background-image: url("../images/newsletter/newsletterFlower.png");
+    background-position: 110% 50%;
+    background-repeat: no-repeat;
+}
+
+.newsletterHead h3 {
+    font-family: var(--secondary-font);
+    font-size: 4rem;
+    color: var(--themeColor-1);
+}
+
+.newsletterHead h3 {
+    font-family: var(--secondary-font);
+    font-size: 4rem;
+    color: var(--themeColor-1);
+}
+
+.newsletterPara h3 {
+    font-family: var(--primary-font);
+    padding: 1rem;
+}
+
+.newsletterHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 5rem 0 0; */
+}
+
+.newsletterForm {
+    padding: 1rem;
+    background: none;
+}
+
+#newsletterEmail {
+    background-color: transparent;
+    border: none;
+    border-bottom: #5e5e5e 1px solid;
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+#newsletterBtn {
+    color: var(--themeColor-1);
+}
+
+#newsletterBtn:hover {
+    transform: scale(1.2);
+}
+
+/* brand slider*/
+
+.brandSliderSec {
+    margin-bottom: 4rem;
+}
+
+.brandImg {
+    width: 172px;
+    height: 55px;
+}
+
+.brandImg img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    transition: all .1s ease-in-out;
+}
+
+.brandImg img:hover {
+    opacity: 1;
+}
+
+.brandSlider .item .brandImg {
+    margin: 0 auto;
+}
+
+/* footer section */
+
+.footerSec .container {
+    background: var(--themeColor-2);
+    background-image: url("../images/footer/footerBackground.png");
+}
+
+.footerLogo {
+    margin: 5rem auto 2rem;
+    width: 250px;
+    height: 70px;
+}
+
+.footerLogo img {
+    height: 100%;
+    width: 100%;
+}
+
+.footerPara p {
+    font-size: 1.6rem;
+    color: rgb(96, 96, 96);
+    margin: 1rem 0;
+}
+
+.footerIcon {
+    margin: 2rem 0 1rem;
+}
+
+.footerIcon a {
+    margin: 0 2rem;
+    font-size: 2.5rem;
+}
+
+.footerIcon a i {
+    color: var(--themeColor-1);
+    transition: all .2s ease-in-out;
+}
+
+.footerIcon a:hover i {
+    transform: scale(1.2);
+}
+
+.footerForm {
+    margin: 1rem 0;
+}
+
+.footerForm #newsletterEmail {
+    margin: 1rem 0 2rem;
+}
+
+.footerForm p {
+    font-size: 1.5rem;
+    color: rgb(96, 96, 96);
+    font-style: italic;
+    margin-bottom: 5rem;
+}
+
+.footerStrip {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.footerStrip p,
+.footerStrip a {
+    font-size: 1.5rem;
+    color: rgb(96, 96, 96);
+    text-transform: capitalize;
+    margin: 0 2rem 1rem;
+}
