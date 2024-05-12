@@ -6,6 +6,8 @@ html{
 :root{
     --themeColor-1: #E35640;
     --themeColor-2: #f9f6f6;
+    --color-dark:#000;
+    --color-white:#fff;
     --primary-font: "Playfair Display", serif;
     --secondary-font:"Dancing Script", cursive;
     --ternary-font:"Platypi", serif;

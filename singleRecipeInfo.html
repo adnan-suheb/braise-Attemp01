@@ -54,17 +54,16 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link " href="index.html">Home </a>
+                            <a class="nav-link" href="index.html">Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="allRecipe.html">Recipe</a>
-                        </li>
-                        
+                            <a class="nav-link" href="allRecipe.html">Recipe</a>
+                        </li>                        
                         <li class="nav-item">
                             <a class="nav-link" href="aboutUs.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="recipeForm.html">Add Recipe</a>
+                            <a class="nav-link" href="recipeForm.html">Add Recipe</a> 
                         </li>
                     </ul>
 
@@ -73,67 +72,79 @@
         </div>
     </header>
 
-    <!-- cards section -->
-    <section class="cardsSection">
-        <div class="container">
-            <div class="allRecipeSecHeading text-center">
-                <h3 class="mb-0">Enjoy Delicious Recipes by Braise</h3>
-            </div>
-            <div class="row" id="allRecipeContainer">
-                <div class="col-md-4 col-sm-6">
-                    <figure class="recipeCards">
-                        <div class="recipeImg">
-                            <img src="./images/cards/1.jpg" alt="" title="">
-                            <div class="imgBackDrop" id="imgBackDrop"></div>
-                            <button type="button">View Recipe</button>
-                        </div>
-                        <figcaption>
-                            <div class="recipeDetails">
-                                <p>most popular dishes</p>
-                                <h1>Lamb soup with spices & rice Lorem ipsum dolor sit, amet consectetur adipisicing
-                                    elit.
-                                    Sit, voluptates?</h1>
-                            </div>
-                            <hr>
-                            <div class="timeAndLevel">
-                                <p><i class="fa-regular fa-clock"></i> 10 to 30 min</p>
-                                <p><i class="fa-regular fa-thumbs-up"></i> easy</p>
-                            </div>
-                        </figcaption>
-                    </figure>
+
+
+
+    <!-- single recipe Info -->
+
+    <section class="singleRecipeSec">
+        <div class="container" id="singleRecipe">
+            <div class="recipeDetails text-center">
+                <div class="recipeHeading" id="titleContainer">
+                    <h1>
+                        Creamy lentil soup with onion and carrot
+                    </h1>
                 </div>
+                <div class="maggyDawson">
+                    <div class="imgAndName">
+                        <img src="./images/invitation/mainImg.png" alt="">
+                        <div class="nameAndDate">
+                            <h4>maggy dawson</h4>
+                            <p>september 15, 2021</p>
+                        </div>
+                    </div>
+                    <div class="verticleRule"></div>
+                    <div class="icons">
+                        <a href="javascript:;"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="javascript:;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="javascript:;"><i class="fa-brands fa-pinterest"></i></a>
+
+                    </div>
+                </div>
+                <div class="recipeImg" id="imageContainer">
+                    <img src="./images/bannerImg/1.jpg" alt="">
+                </div>
+                <div class="timeAndLevel" id="timeLevelContainer">
+                    <p><i class="fa-regular fa-clock"></i> 10 to 30 min</p>
+                    <p><i class="fa-regular fa-thumbs-up"></i> Easy</p>
+                </div>
+                <div class="ingredients">
+                    <h3>Ingredients</h3>
+                    <ul class="text-left" id="listContainer">
+                        <li>
+                            <input type="checkbox" id="1">
+                            <label for="1">Lorem ipsum dolor sit amet.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="2">
+                            <label for="2">Lorem ipsum dolor sit amet.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="3">
+                            <label for="3">Lorem ipsum dolor sit amet.</label>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="description" id="descriptionContainer">
+                    <h3>Description And Recipe</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptates dolorem aut dolor?
+                        Beatae doloremque esse voluptate. Inventore quo dolores numquam beatae possimus blanditiis.
+                        Accusantium quibusdam dolorum autem nobis consequatur distinctio eveniet adipisci consequuntur
+                        nesciunt laboriosam magnam, iure ipsam illo vel quo quas? Sapiente voluptate totam eligendi
+                        alias,
+                        est nesciunt.</p>
+                </div>
+
             </div>
+
         </div>
     </section>
 
-    
-     <!-- Newsletter section -->
-     <section class="newsletterSec">
-        <div class="container">
-            <div class="newsletter text-center">
-                <div class="newsletterHead">
-                    <h3>
-                        Our newsletter
-                    </h3>
-                </div>
-                <div class="newsletterPara">
-                    <h3>Subscribe to our newsletter & keep up with our latest recipes and organized workshops.</h3>
-                </div>
-                <div class="newsletterForm">
-                    <form id="newsletterForm">
-                        <div class="form-group">
-                            <label for="newsletterEmail"></label>
-                            <input type="email" required placeholder="Enter you email address here" id="newsletterEmail">
-                            <button id="newsletterBtn" type="submit"><i  class="fa-solid fa-location-arrow fa-2x"></i></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+   
 
-      <!-- brand slider section -->
-      <section class="brandSliderSec">
+    <!-- brand slider section -->
+    <section class="brandSliderSec">
         <div class="container">
             <div class="owl-carousel owl-theme brandSlider" id="brandSlider">
                 <div class="item">
@@ -147,8 +158,9 @@
         </div>
     </section>
 
- <!-- Footer Section -->
- <footer class="footerSec">
+
+<!-- Footer Section -->
+<footer class="footerSec">
     <div class="container">
         <div class="footerLogo text-center">
             <img src="./images/footer/footerLogo.png" alt="">
@@ -187,12 +199,12 @@
 </footer>
 
 
+
     <div class="loader d-none" id="loader">
         <div class="spinner-border" role="status">
             <span class="sr-only">Loading...</span>
           </div>
     </div>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -202,8 +214,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="./js/utility.js"></script>
-    <script src="./js/allRecipe.js"></script>
-
+    <script src="./js/singleRecipeInfo.js"></script>
 
 
 

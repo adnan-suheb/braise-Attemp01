@@ -54,14 +54,14 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link " href="index.html">Home </a>
+                            <a class="nav-link" href="index.html">Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="allRecipe.html">Recipe</a>
+                            <a class="nav-link" href="allRecipe.html">Recipe</a>
                         </li>
-                        
+
                         <li class="nav-item">
-                            <a class="nav-link" href="aboutUs.html">About Us</a>
+                            <a class="nav-link active" href="aboutUs.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="recipeForm.html">Add Recipe</a>
@@ -73,67 +73,79 @@
         </div>
     </header>
 
-    <!-- cards section -->
-    <section class="cardsSection">
-        <div class="container">
-            <div class="allRecipeSecHeading text-center">
-                <h3 class="mb-0">Enjoy Delicious Recipes by Braise</h3>
+
+
+    <section class="aboutUsSection">
+        <div class="container text-center">
+            <div class="logoStrip">
+                <div class="stripDetails">
+                    <img src="./images/footer/footerLogo.png" alt="">
+                    <h1>#Know Us</h1>
+                    <p>Everything you should know about <span>BRAISE!</span></p>
+                </div>
             </div>
-            <div class="row" id="allRecipeContainer">
-                <div class="col-md-4 col-sm-6">
-                    <figure class="recipeCards">
-                        <div class="recipeImg">
-                            <img src="./images/cards/1.jpg" alt="" title="">
-                            <div class="imgBackDrop" id="imgBackDrop"></div>
-                            <button type="button">View Recipe</button>
-                        </div>
-                        <figcaption>
-                            <div class="recipeDetails">
-                                <p>most popular dishes</p>
-                                <h1>Lamb soup with spices & rice Lorem ipsum dolor sit, amet consectetur adipisicing
-                                    elit.
-                                    Sit, voluptates?</h1>
-                            </div>
-                            <hr>
-                            <div class="timeAndLevel">
-                                <p><i class="fa-regular fa-clock"></i> 10 to 30 min</p>
-                                <p><i class="fa-regular fa-thumbs-up"></i> easy</p>
-                            </div>
-                        </figcaption>
-                    </figure>
+
+            <div class="aboutBlog row">
+                <div class="blogImg col-md-6">
+                    <div class="img">
+                        <img src="./images/aboutUs/img1.png" alt="">
+                    </div>
+                </div>
+                <div class="blogPara col-md-6">
+                    <h1>About Me</h1>
+                    <p>I’m Maggy Dawson , the person behind <span style="color: red;">BRAISE</span>.
+                        I learnt cooking good Indian food
+                        with my friends & culinary experts in our extended families.
+                        After 2 decades of experience in practical Indian cooking, In 2012 I started
+                        this blog to share my recipes that are simple, quick, delicious and healthy.
+                    </p>
+                    <h1>About The Blog</h1>
+                    <p>What started as a small space to share Baby food and kids’ recipes, over the
+                        years has grown into a larger community for learning simple & healthy
+                        Indian cooking. Kudos to the Readers for making Swasthi’s Recipes one of
+                        the Top Indian Food Blogs!
+                    </p>
+                </div>
+                <div class="blogPara col-md-6">
+                    <h1>What You Will Find On Braise</h1>
+                    <p>Here, you can find different recipes as well as you can share yours recipes, let others know
+                        your taste.
+                        I value our readers’ time above all, so to avoid confusions and failures all
+                        the recipes are well written step by step.
+                        if you are new to this blog and do not know where to start, You can check
+                        <span style="color: red;">Recipe</span> Page.
+
+                    </p>
+                    <h1>Focus on health</h1>
+                    <p>I am a health freak and a food freak. I believe in eating wholesome foods
+                        for a happy mind and healthy body. So you will find lot of whole grain
+                        recipes made using Millets, – Ragi, Oats & Quinoa suitable to folks of all
+                        age groups including the aged.
+                        Most of the everyday food recipes shared here call for ingredients that are
+                        rich, wholesome, & nourishing to the body. Most of these are free from
+                        refined or processed ingredients.
+                    </p>
+
+                </div>
+                <div class="blogVideo col-md-6">
+                    <div class="video">
+                        <video autoplay loop muted src="./images/aboutUs/vid1.mp4"></video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="downloadApp">
+                <h1>Download Our <a href="javascript:;">App</a></h1>
+                <div class="video">
+                    <video autoplay loop muted src="./images/aboutUs/downloadApp.mp4"></video>
                 </div>
             </div>
         </div>
     </section>
 
-    
-     <!-- Newsletter section -->
-     <section class="newsletterSec">
-        <div class="container">
-            <div class="newsletter text-center">
-                <div class="newsletterHead">
-                    <h3>
-                        Our newsletter
-                    </h3>
-                </div>
-                <div class="newsletterPara">
-                    <h3>Subscribe to our newsletter & keep up with our latest recipes and organized workshops.</h3>
-                </div>
-                <div class="newsletterForm">
-                    <form id="newsletterForm">
-                        <div class="form-group">
-                            <label for="newsletterEmail"></label>
-                            <input type="email" required placeholder="Enter you email address here" id="newsletterEmail">
-                            <button id="newsletterBtn" type="submit"><i  class="fa-solid fa-location-arrow fa-2x"></i></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
 
-      <!-- brand slider section -->
-      <section class="brandSliderSec">
+    <!-- brand slider section -->
+    <section class="brandSliderSec">
         <div class="container">
             <div class="owl-carousel owl-theme brandSlider" id="brandSlider">
                 <div class="item">
@@ -147,51 +159,53 @@
         </div>
     </section>
 
- <!-- Footer Section -->
- <footer class="footerSec">
-    <div class="container">
-        <div class="footerLogo text-center">
-            <img src="./images/footer/footerLogo.png" alt="">
-        </div>
-        <div class="footerPara text-center">
-            <p>Theme especially made for cooking experts, novices & all who enjoy sharing their recipes.
-            </p>
-        </div>
-        <div class="footerIcon text-center">
-            <a href="javascript:;">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="javascript:;">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="javascript:;">
-                <i class="fa-brands fa-pinterest"></i>
-            </a>
-        </div>
-        <div class="footerForm text-center">
-            <form id="footerForm">
-                <div class="form-group">
-                    <label for="footrEmail"></label>
-                    <input type="email" required placeholder="Enter you email address here" id="footerEmail">
-                    <button id="footerEmailBtn" type="submit"><i  class="fa-solid fa-location-arrow fa-2x"></i></button>
-                </div>
-            </form>
-        </div>
-        <hr>
-        <div class="footerStrip">
-            <a href="javascript:;">Privacy Policy</a>
-            <p><i class="fa-regular fa-copyright"></i> 2024 Qode Interactive, All Rights Reserved</p>
 
-        </div>
-    </div>
-</footer>
+    <!-- Footer Section -->
+    <footer class="footerSec">
+        <div class="container">
+            <div class="footerLogo text-center">
+                <img src="./images/footer/footerLogo.png" alt="">
+            </div>
+            <div class="footerPara text-center">
+                <p>Theme especially made for cooking experts, novices & all who enjoy sharing their recipes.
+                </p>
+            </div>
+            <div class="footerIcon text-center">
+                <a href="javascript:;">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="javascript:;">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="javascript:;">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+            </div>
+            <div class="footerForm text-center">
+                <form id="footerForm">
+                    <div class="form-group">
+                        <label for="footrEmail"></label>
+                        <input type="email" required placeholder="Enter you email address here" id="footerEmail">
+                        <button id="footerEmailBtn" type="submit"><i
+                                class="fa-solid fa-location-arrow fa-2x"></i></button>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="footerStrip">
+                <a href="javascript:;">Privacy Policy</a>
+                <p><i class="fa-regular fa-copyright"></i> 2024 Qode Interactive, All Rights Reserved</p>
 
+            </div>
+        </div>
+    </footer>
 
     <div class="loader d-none" id="loader">
         <div class="spinner-border" role="status">
             <span class="sr-only">Loading...</span>
-          </div>
+        </div>
     </div>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -202,8 +216,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="./js/utility.js"></script>
-    <script src="./js/allRecipe.js"></script>
-
 
 
 

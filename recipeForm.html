@@ -27,6 +27,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="./css/helper.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -54,17 +55,17 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link " href="index.html">Home </a>
+                            <a class="nav-link" href="index.html">Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="allRecipe.html">Recipe</a>
+                            <a class="nav-link" href="allRecipe.html">Recipe</a>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a class="nav-link" href="aboutUs.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="recipeForm.html">Add Recipe</a>
+                            <a class="nav-link active" href="recipeForm.html">Add Recipe</a>
                         </li>
                     </ul>
 
@@ -73,67 +74,67 @@
         </div>
     </header>
 
-    <!-- cards section -->
-    <section class="cardsSection">
+    <!-- form section -->
+    <section class="recipeFormSection">
         <div class="container">
-            <div class="allRecipeSecHeading text-center">
-                <h3 class="mb-0">Enjoy Delicious Recipes by Braise</h3>
-            </div>
-            <div class="row" id="allRecipeContainer">
-                <div class="col-md-4 col-sm-6">
-                    <figure class="recipeCards">
-                        <div class="recipeImg">
-                            <img src="./images/cards/1.jpg" alt="" title="">
-                            <div class="imgBackDrop" id="imgBackDrop"></div>
-                            <button type="button">View Recipe</button>
+            <div class="addRecipeForm">
+                <form id="recipeForm" class="recipeForm text-center">
+                    <div class="formHeading text-center">
+                        <h1>Add Your Own Recipe</h1>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Recipe Name<span style="color: var(--themeColor-1);">*</span></label>
+                        <input type="text" required placeholder="Enter recipe name.." id="title" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="bannerImg">Add Recipe Image<span style="color: var(--themeColor-1);">*</span></label>
+                        <input type="file" class="form-control-file" id="bannerImg">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time Required<span style="color: var(--themeColor-1);">*</span></label>
+                        <select required id="time" class="form-control">
+                            <option value="10 to 30 Min">10 to 30 Min</option>
+                            <option value="1 to 2 Hours">1 to 2 Hours</option>
+                            <option value="More Than 2 Hours">More Than 2 Hours</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="level">Level of Making<span style="color: var(--themeColor-1);">*</span></label>
+                        <select required id="level" class="form-control">
+                            <option value="Easy">Easy</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Hard">Hard</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="imageUrl">Add Ingredients<span style="color: var(--themeColor-1);">*</span></label>
+                        <div class="chipsContainer d-none" id="chipsContainer">
+                            <!-- <div class="chip">
+                                <p>lemon tea <span onclick="removeChip(this)"><i class="fa-solid fa-xmark"></i></span></p>
+                            </div>                             -->
                         </div>
-                        <figcaption>
-                            <div class="recipeDetails">
-                                <p>most popular dishes</p>
-                                <h1>Lamb soup with spices & rice Lorem ipsum dolor sit, amet consectetur adipisicing
-                                    elit.
-                                    Sit, voluptates?</h1>
-                            </div>
-                            <hr>
-                            <div class="timeAndLevel">
-                                <p><i class="fa-regular fa-clock"></i> 10 to 30 min</p>
-                                <p><i class="fa-regular fa-thumbs-up"></i> easy</p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
+                        <input type="ingredient" placeholder="Enter Ingredients.." class="form-control" id="ingredient">
+                        <button type="button" class="btn btn-outline-danger mt-2" onclick="addChip(this)">Add Chip</button>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Add Descriptions<span style="color: var(--themeColor-1);">*</span></label>
+                        <textarea type="text" required placeholder="Enter Description.." class="form-control" id="description"></textarea>
+                    </div>
+                    <hr>
+                    <div class="form-group d-flex justify-content-between m-0">    
+                        <button type="button" class="btn btn-outline-danger" onclick="onClear(this)">Clear Form</button>
+                        <button type="submit" class="btn btn-outline-danger">Add Recipe</button>
+                    </div>
+                                       
+                </form>
             </div>
         </div>
     </section>
 
-    
-     <!-- Newsletter section -->
-     <section class="newsletterSec">
-        <div class="container">
-            <div class="newsletter text-center">
-                <div class="newsletterHead">
-                    <h3>
-                        Our newsletter
-                    </h3>
-                </div>
-                <div class="newsletterPara">
-                    <h3>Subscribe to our newsletter & keep up with our latest recipes and organized workshops.</h3>
-                </div>
-                <div class="newsletterForm">
-                    <form id="newsletterForm">
-                        <div class="form-group">
-                            <label for="newsletterEmail"></label>
-                            <input type="email" required placeholder="Enter you email address here" id="newsletterEmail">
-                            <button id="newsletterBtn" type="submit"><i  class="fa-solid fa-location-arrow fa-2x"></i></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-      <!-- brand slider section -->
-      <section class="brandSliderSec">
+    <!-- brand slider section -->
+    <section class="brandSliderSec">
         <div class="container">
             <div class="owl-carousel owl-theme brandSlider" id="brandSlider">
                 <div class="item">
@@ -147,8 +148,9 @@
         </div>
     </section>
 
- <!-- Footer Section -->
- <footer class="footerSec">
+
+<!-- Footer Section -->
+<footer class="footerSec">
     <div class="container">
         <div class="footerLogo text-center">
             <img src="./images/footer/footerLogo.png" alt="">
@@ -190,7 +192,7 @@
     <div class="loader d-none" id="loader">
         <div class="spinner-border" role="status">
             <span class="sr-only">Loading...</span>
-          </div>
+        </div>
     </div>
 
 
@@ -200,11 +202,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js"></script>
     <script src="./js/utility.js"></script>
-    <script src="./js/allRecipe.js"></script>
-
-
+    <script src="./js/recipeForm.js"></script>
 
 
 
